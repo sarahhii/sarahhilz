@@ -3,14 +3,17 @@
     box-sizing: border-box;
     color: #4F4F4F;
     font-family: 'Poppins', sans-serif;
+
 }
 
 body {
     background-color: white;
+}
+
+main {
     min-height: 90vh;
     /*scrollbar even with little content*/
 }
-
 
 /* --- HEADING & TEXT STYLES --- */
 h1,
@@ -156,6 +159,8 @@ span {
 .navbar {
     box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
     padding-top: .5625rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 /* Footer */
@@ -165,7 +170,7 @@ footer {
 }
 
 #footerText {
-    margin: 0.2vh 2vh 0.2vh 2vh;
+    margin: 2vh 2vh 0.2vh 2vh;
     font-size: 0.8rem;
 }
 
@@ -174,6 +179,32 @@ footer {
 
 
 /* --- ANIMATIONS --- */
+
+/* HOVER ZOOM */
+
+
+.hover-zoom img,
+.hover-zoom video {
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear
+}
+
+.hover-zoom:hover img,
+.hover-zoom:hover video {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.bg-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%
+}
+
+
+
 
 /* --- LAZY-LOAD EFFECT --- */
 
@@ -449,6 +480,7 @@ a:active {
 #emailBtn > i {
     color: inherit;
 }
+
 /* social btns on contact page */
 
 .socialIconBtn > i {
@@ -474,6 +506,19 @@ a:active {
 }
 
 
+/* Back to top btn*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 5vh;
+    right: 3vh;
+    display: none;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    font-size: 1.3rem;
+    line-height: 0;
+}
+
+
 
 
 /* OTHERS */
@@ -481,4 +526,60 @@ a:active {
 /* higher index */
 .zIndex3 {
     z-index: 3;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /*  navbar padding on small screens  */
+    .navbar {
+        padding-left: 0rem;
+    }
+
+
+}
+
+
+/*CONTACT CSS*/
+.envelope{
+        margin-bottom: 15%;
+font-size: calc(100% + 1vw +  1vh);
+    color: white;
+}
+.starterDivlessPad{
+    padding-top: 5vh;
+}
+.ContactFormDivLeft {
+    background: #00DBB9;
+    padding: 1.3vw;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+
+.contact-info img {
+}
+
+.ContactFormDiv {
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form label {
+    font-weight: 600;
+    margin-top: 1.2vh;
+}
+
+.contact-form button {
+    background: #00DBB9;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+    margin-top: 2vh;
+}
+
+.contact-form button:focus {
+    box-shadow: none;
 }

@@ -31,8 +31,8 @@
 <body id=body class="mt-5">
 
 
-  <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top px-4">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="sh logo" width="80"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@
                     <!-- ml-auto still works just fine-->
                     <ul class="navbar-nav ml-auto">
                         <a class="nav-link pe-4" href="about.html">About</a>
-                        <a class="nav-link pe-4" href="contact.html">Contact</a>
+                        <a class="nav-link pe-4 active" aria-current="page" href="contact.html">Contact</a>
                         <a class="nav-link pe-2 d-flex align-items-center fa fa-linkedin" href="https://www.linkedin.com/in/sarah-hilz-689389149"></a>
                         <a class="nav-link pe-2 d-flex align-items-center fa fa-xing " href="https://www.xing.com/profile/Sarah_Hilz4/cv"> </a>
                         <a class="nav-link pe-2 d-flex align-items-center fa fa-behance" href="https://www.behance.net/sarah_hilz"></a>
@@ -57,39 +57,72 @@
     <main class="bg-light">
         <!-- Hero Section -->
 
-
-        <div class="container-fluid bg-light pt-5 pb-5 mb-5 lazy-load secA parallax" id="sec1">
-            <div class="row">
-                <div class="col-lg-6 col-sm starterDiv">
-                    <h1 class=" outline" id="">Contact</h1><br>
+        <div class="container-fluid bg-light lazy-load contactForm parallax secA" id="sec1">
+            <div class="row justify-content-start">
+                <div class="starterDivlessPad">
+                    <h1 class="outline" id="">Get in touch</h1><br>
                     <h5>Interested? Questions? Feedback?</h5>
-                    <p>I am happy to receive any enquiries, criticism and suggestions. <br>Please contact me via one of the following contact options:</p><br><br>
-                    <h5>Send an e-mail: <br>
-                    </h5>
-                    
-                    <a type="button" class="btn btn-dark btn-lg me-3" type="button" href="mailto:sarah164@hotmail.de" id="emailBtn">sarah164@hotmail.de <i class="fa fa-angle-double-right"></i></a><br>
-                    <br>
-                    
-                    <br><br>
-                    <h5>Or contact me via social media:</h5>
-                    <div class="d-flex justify-content-start align-items-center socialIcons">
+                    <p>I am happy to receive any enquiries, criticism and suggestions. <br>Please contact me via the following contact form:</p><br>
 
+
+                </div>
+                <div class="col-md-2 ContactFormDivLeft">
+                    <div class="contact-info">
+                        <i class="fa fa-envelope envelope"></i>
+                        <h3>Contact me</h3>
+                        <h4>I would love to hear from you!</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 ContactFormDiv">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="fname">First Name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="comment">Comment:</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ps-0 pt-4">
+                    <h5 class="pt-5 pb-3">Or contact me via social media:</h5>
+                    <div class="d-flex justify-content-start align-items-center socialIcons">
                         <a class="me-3 btn btn-primary socialIconBtn" href="https://www.linkedin.com/in/sarah-hilz-689389149" role="button" id="linkedIn"><i class="fa fa-linkedin"></i></a>
                         <a class="me-3 btn btn-primary socialIconBtn" href="https://www.xing.com/profile/Sarah_Hilz4/cv" role="button" id="xing"><i class="fa fa-xing"></i></a>
                         <a class="me-3 btn btn-primary socialIconBtn" href="https://www.behance.net/sarah_hilz" role="button" id="behance"><i class="fa fa-behance socialIcon"></i></a>
                     </div>
                 </div>
             </div>
+
         </div>
-
-
-
-
-
-
+        
+        
 
 
         <div class="pt-5"></div>
+        <a id="back-to-top" href="#" class="btn btn-lg back-to-top rounded-circle" role="button"><i class="fa fa-angle-double-up"></i></a>
 
     </main>
     <!-- Bootstrap JS -->
@@ -103,7 +136,7 @@
     <footer class="py-1 bg-light">
         <div class="">
             <small>
-                <p id="footerText"><a href="impressum.html">Impressum </a>
+                <p id="footerText"><a href="impress.html">Impress </a>
                     © 2021 Sarah Hilz</p>
             </small>
         </div>

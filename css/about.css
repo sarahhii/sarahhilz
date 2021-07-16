@@ -138,6 +138,10 @@ xxl ≥1400px
     .addPadding {
         padding: 4vw 5vw 4vw 5vw;
     }
+        /*  navbar padding on small screens  */
+    .navbar {
+        padding-left: 0rem;
+    }
 }
 
 
