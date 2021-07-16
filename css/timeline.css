@@ -271,7 +271,6 @@ h5.details {
     .main-timeline .timeline-content:after,
     .main-timeline .timeline:nth-child(even) .timeline-content:after {
         left: 5px;
-        display: none;
     }
 
 

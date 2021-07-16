@@ -6,7 +6,7 @@ var aText = new Array(
     "I'm Sarah."
 
 );
-var iSpeed = 250; // time delay of print out
+var iSpeed = 200; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
 var iScrollAt = 20; // start scrolling up at this many lines
