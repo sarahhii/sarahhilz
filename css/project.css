@@ -1,0 +1,148 @@
+/*--- BASICS ---*/
+
+.heroImg {
+    max-width: 70%;
+}
+
+.annersRed {
+    color: rgb(245, 91, 73);
+    font-weight: 600;
+
+}
+
+.annersTeal {
+    color: #167d7d;
+    font-weight: 600;
+}
+
+/*.projectDescriptionDiv {
+    padding: 0vw 4vw 0vw 4vw;
+} */
+
+.projectDescription {}
+
+/* IMAGES */
+.projectImg {
+    padding: 2vw 2vw 2vw 2vw;
+    max-width:100%;
+}
+
+.projectImgLessPadding {
+    max-width: 100%;
+    padding: 2vw 0.2vw 2vw 0.2vw;
+}
+
+.lessHeight {
+    max-height: 50vh;
+    padding: 2vw 0.2vw 2vw 0.2vw;
+    max-width: 100%;
+}
+
+iframe{
+    max-width: 100%;
+}
+/* HEADING SECTION */
+.heroImg {
+    max-width: 70%;
+}
+
+.offsetHeadlineLeft {
+    padding-left: 3vw;
+}
+
+.openerSection {
+    padding-bottom: 5vw;
+}
+
+.hugeImg {
+    max-width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SLIDE IN WHEN IN VIEW */
+
+* {
+    @include box-sizing(border-box);
+}
+
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+}
+
+.already-visible {
+    transform: translateY(0);
+    animation: none;
+}
+
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+/*--- BASICS ---*/
+
+.projDescrDiv {
+    max-width: 100vw;
+}
+
+.imgDivPad{
+        padding: 2vw 2vw 2vw 2vw;
+
+}
+/* 
+xs   <576px	
+sm  ≥576px	
+md  ≥768px	
+lg  ≥992px	
+xl  ≥1200px	
+xxl ≥1400px
+*/
+
+
+@media only screen and (max-width: 992px) {
+    .projectDescription {
+        padding-left: 2vw;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /*  no padding after first headline  */
+    .starterText {
+        min-height: 0vh;
+        text-align: center;
+    }
+
+    .offsetHeadlineLeft {
+        padding-left: 0vw;
+    }
+
+    /* Project Images */
+    .projectImg {
+        max-width: 100%;
+    }
+}

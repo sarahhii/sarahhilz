@@ -1,0 +1,144 @@
+/* HEADLINE STARTER AREA */
+
+.starterDiv {
+    min-height: 70vh;
+    padding: 10vh 0vh 10vh 0vh;
+}
+
+.secA {
+    animation-delay: 5s;
+    padding: 0vw 0vw 0vw 10vw;
+}
+
+
+.typewrite > span {
+    color: #00DBB9;
+}
+
+.typewrite {
+    min-height: 5vh;
+}
+
+
+/* images */
+#profileIMG {
+    max-width: 100%;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%);
+    /* FF 35+ */
+    padding: 0vw;
+}
+
+#profileIMG:hover {
+    transition: filter .4s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%);
+    /* FF 35+ */
+}
+
+
+.projectImg {
+    max-width: 100%;
+}
+
+
+/* --- Progress bar --- */
+.progress-bar {
+    width: 0;
+    /*Must stay 0 for animation effect*/
+    animation: progress 1.5s ease-in-out forwards;
+    height: 1.5rem;
+    background-color: #00DBB9;
+}
+
+.progress {
+    height: 1.2rem;
+    margin-bottom: 1rem;
+    max-width: 60%;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* 
+xs   <576px	
+sm  ≥576px	
+md  ≥768px	
+lg  ≥992px	
+xl  ≥1200px	
+xxl ≥1400px
+*/
+@media only screen and (max-width: 2000px) {
+    .starterDiv > p {
+        max-width: 55%;
+    }
+
+    #starterImgDiv {
+        padding: 10vh 0vh 10vh 0vh;
+    }
+
+    .addPadding {
+        padding: 4vw 15vw 4vw 15vw;
+    }
+
+    .secA {
+        padding: 4vw 5vw 4vw 5vw;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .starterDiv {
+        min-height: 70vh;
+        padding: 10vh 0vh 10vh 0vh;
+    }
+
+    .timelineContainerDiv {
+        max-width: 100vw;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #starterImgDiv {
+        padding: 0vw;
+    }
+
+    .starterDiv {
+        min-height: 30vh;
+        padding: 5vh 0vh 5vh 0vh;
+    }
+
+    .starterText {
+        min-height: 0vh;
+    }
+
+    .addPadding {
+        padding: 4vw 5vw 4vw 5vw;
+    }
+
+
+    .secArow {
+        min-height: 0vh;
+        padding-left: 6vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .starterDiv {
+        min-height: 0vh;
+        padding: 10vh 0vh 10vh 0vh;
+    }
+
+    .addPadding {
+        padding: 4vw 5vw 4vw 5vw;
+    }
+}
+
+
+

@@ -1,0 +1,136 @@
+/* HEADLINE STARTER AREA */
+
+.starterDiv {
+    min-height: 70vh;
+    padding: 10vh 0vh 10vh 0vh;
+}
+
+.secA {
+    animation-delay: 5s;
+}
+
+#starterImgDiv {
+    padding: 20vh 0vh 20vh 0vh;
+}
+
+
+
+/* images */
+#profileIMG {
+    max-width: 100%;
+    transform: scaleX(-1);
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%);
+    /* FF 35+ */
+
+}
+
+#profileIMG:hover {
+    transition: filter .4s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%);
+    /* FF 35+ */
+}
+
+#previewImgDatagraph {
+    width: 50%;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* 
+xs   <576px	
+sm  ≥576px	
+md  ≥768px	
+lg  ≥992px	
+xl  ≥1200px	
+xxl ≥1400px
+*/
+
+@media only screen and (max-width: 2000px) {
+    .starterDiv > p {
+        max-width: 55%;
+    }
+
+     #starterImgDiv {
+        padding: 10vh 0vh 10vh 0vh;
+    }
+
+    .addPadding {
+        padding: 4vw 15vw 4vw 15vw;
+    }
+    .secA{
+        padding: 4vw 5vw 4vw 5vw;
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    #starterImgDiv {
+        padding: 10vh 0vh 10vh 0vh;
+    }
+
+    .secA {
+        padding: 0vw 2vw 0vw 2vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .starterDiv {
+        min-height: 0vh;
+        padding: 0vh 0vh 5vh 0vh;
+    }
+
+    .starterDiv > p {
+        max-width: 60%;
+    }
+
+    .starterText {
+        min-height: 0vh;
+    }
+
+
+
+    #starterImgDiv {
+        padding: 0vw;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /*  no padding after first headline  */
+    .starterText {
+        min-height: 0vh;
+    }
+
+    /* Project Images */
+    .projectImg {
+        max-width: 100%;
+    }
+
+    .starterDiv > p {
+        max-width: 100%;
+    }
+
+    .addPadding {
+        padding: 5vw 5vw 5vw 5vw;
+    }
+
+    .secArow {
+        min-height: 0vh;
+        padding-left: 6vw;
+    }
+
+
+}
