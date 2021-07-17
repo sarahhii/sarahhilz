@@ -449,11 +449,14 @@ a:active {
     border: 0;
     -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+    -webkit-appearance: none;
+
 }
 
 /* about btn on index page */
 #aboutBtn {
     color: white;
+
 }
 
 #aboutBtn:hover {
@@ -470,9 +473,6 @@ a:active {
 #emailBtn {
     color: white;
     text-transform: lowercase;
-       -webkit-appearance: none;
-
-    
 }
 
 #emailBtn:hover {
@@ -544,14 +544,16 @@ a:active {
 
 
 /*CONTACT CSS*/
-.envelope{
-        margin-bottom: 15%;
-font-size: calc(100% + 1vw +  1vh);
+.envelope {
+    margin-bottom: 15%;
+    font-size: calc(100% + 1vw + 1vh);
     color: white;
 }
-.starterDivlessPad{
+
+.starterDivlessPad {
     padding-top: 5vh;
 }
+
 .ContactFormDivLeft {
     background: #00DBB9;
     padding: 1.3vw;
@@ -560,8 +562,7 @@ font-size: calc(100% + 1vw +  1vh);
 }
 
 
-.contact-info img {
-}
+.contact-info img {}
 
 .ContactFormDiv {
     background: #fff;
