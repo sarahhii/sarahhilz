@@ -1,0 +1,22 @@
+do!:
+- add alt-img texts
+
+
+check:
+- mobile parallax-transition maybe off
+- uiux header img less margin in PS-file?
+- marg/pad @ uiux "the project"
+- up-button on mobile rnd?
+- maybe change texts @ about type-in-function
+- check typing- js and change
+- check large and lower case usage
+- maybe change color > colour bcz usually used british english
+
+
+
+contents:
+- contact form fade in (currently d-none)
+- insert figma prototype @ ui/ux instead of video
+- anners website: more steps like figma screens
+- add locu app
+- add photography marked as side project
