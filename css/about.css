@@ -53,6 +53,8 @@
     animation: progress 1.5s ease-in-out forwards;
     height: 1.5rem;
     background-color: #00DBB9;
+    font-weight: 600;
+    align-content: center;
 }
 
 .progress {

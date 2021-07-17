@@ -470,6 +470,9 @@ a:active {
 #emailBtn {
     color: white;
     text-transform: lowercase;
+       -webkit-appearance: none;
+
+    
 }
 
 #emailBtn:hover {
