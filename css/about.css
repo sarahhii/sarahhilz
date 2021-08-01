@@ -63,8 +63,14 @@
     max-width: 60%;
 }
 
+.jobLocation{
+    padding-top: 0vh;
+    font-size: 1rem;
+  }
 
-
+.timelineContainerDiv2 h4.title{
+    padding-bottom: 0vh;
+}
 /* MEDIA QUERIES */
 
 /* 
