@@ -1,7 +1,5 @@
 do!:
 - add alt-img texts
-- change language: en!
-- ui/ux: highlight some words in bold 
 - make findable in google
 
 
