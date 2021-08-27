@@ -49,8 +49,6 @@ $(window).resize(function () {
 $(document).scroll(function () {
   triggerLoad();
   parallax();
-  showBackButton();
-  didScroll = true;
 });
 
 function returnWinHeight() {
