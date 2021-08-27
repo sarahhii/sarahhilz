@@ -122,9 +122,10 @@ span {
     fill: none;
 }
 
-.inlineWhite{
+.inlineWhite {
     color: white;
 }
+
 /* --- COLUMS & ROWS Definitions--- */
 
 /* delete
@@ -543,6 +544,9 @@ a:active {
         padding-left: 0rem;
     }
 
+    p, h1, h2 {
+        overflow-wrap: break-word;
+    }
 
 }
 
