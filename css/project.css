@@ -1,3 +1,8 @@
+
+* {
+    overflow-y: hidden;
+}
+
 /*--- BASICS ---*/
 
 .heroImg {
@@ -53,7 +58,6 @@ iframe {
 .hugeImg {
     max-width: 90%;
 }
-
 
 
 
@@ -173,6 +177,22 @@ xxl ≥1400px
         min-height: 0vh;
         padding-left: 6vw;
     }
+    .openerSection div{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+        .openerSection {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .smallerStarterText{
+    font-size: calc(100% + 3.3vw + 3.3vh);
+}
+
 }
 
 
