@@ -1,6 +1,7 @@
 do!:
 - add alt-img texts
 - make findable in google
+- delete styles reference of mediaqueries.css in heads
 
 
 check:
