@@ -26,10 +26,12 @@ TxtType.prototype.tick = function () {
     this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
     var that = this;
-    var delta = 200 - Math.random() * 100;
+    // 200 = pause between each letter ; 300 = speed of typing
+    var delta = 200 - Math.random() * 200;
 
     if (this.isDeleting) {
-        delta /= 2;
+        // speed of deleting
+        delta /= 4;
     }
 
     if (!this.isDeleting && this.txt === fullTxt) {
@@ -38,10 +40,11 @@ TxtType.prototype.tick = function () {
     } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
+        // break before next sentence strts
         delta = 500;
     }
 
-    setTimeout(function ( ) {
+    setTimeout(function () {
         that.tick();
     }, delta);
 };
@@ -55,6 +58,5 @@ window.onload = function () {
             new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-   
-};
 
+};
