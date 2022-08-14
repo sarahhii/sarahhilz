@@ -6,7 +6,7 @@
 
         <loc>https://www.sarahhilz.de/</loc>
 
-        <lastmod>2022-01-21</lastmod>
+        <lastmod>2022-08-10</lastmod>
 
         <changefreq>monthly</changefreq>
 
@@ -18,7 +18,7 @@
 
         <loc>https://www.sarahhilz.de/about.html</loc>
 
-        <lastmod>2022-01-20</lastmod>
+        <lastmod>2022-08-10</lastmod>
 
         <changefreq>yearly</changefreq>
 
@@ -26,6 +26,39 @@
 
     </url>
 
+        <url>
+
+        <loc>https://www.sarahhilz.de/project_hofPackaging</loc>
+
+        <lastmod>2022-08-10</lastmod>
+
+        <changefreq>yearly</changefreq>
+
+        <priority>0.7</priority>
+
+    </url>
+        <url>
+
+        <loc>https://www.sarahhilz.de/project_hofWebsite</loc>
+
+        <lastmod>2022-08-10</lastmod>
+
+        <changefreq>yearly</changefreq>
+
+        <priority>0.9</priority>
+
+    </url>
+        <url>
+
+        <loc>https://www.sarahhilz.de/project_hofOOH</loc>
+
+        <lastmod>2022-08-10</lastmod>
+
+        <changefreq>yearly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
     <url>
 
         <loc>https://www.sarahhilz.de/project_uiux.html</loc>
