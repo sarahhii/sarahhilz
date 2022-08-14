@@ -1,5 +1,5 @@
 do!:
-- add alt-img texts
+- check and add missing alt-img texts
 - make findable in google
 - delete styles reference of mediaqueries.css in heads
 
@@ -20,5 +20,7 @@ contents:
 - contact form fade in (currently d-none)
 - insert figma prototype @ ui/ux instead of video
 - anners website: more steps like figma screens
-- add locu app
-- add photography marked as side project
+- add project locu app
+- update photography
+- maybe make one hof project with packaging, sales sheets etc instead of singular projects
+- add shorter project overview so scrolling through all of them is not needed
